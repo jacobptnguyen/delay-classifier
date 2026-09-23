@@ -6,7 +6,7 @@ A classical ML notebook that predicts whether a US flight will be delayed from i
 
 ## Dataset
 
-[Airlines Dataset to predict a delay](https://www.kaggle.com/datasets/jimschacko/airlines-dataset-to-predict-a-delay) on Kaggle: 539,383 flights, no missing values. Download `Airlines.csv` into the project folder to run the notebook (it's not committed to the repo).
+[Airlines Dataset to predict a delay](https://www.kaggle.com/datasets/jimschacko/airlines-dataset-to-predict-a-delay) by jimschacko on Kaggle (license: CC0, public domain): 539,383 flights, no missing values. Download `Airlines.csv` into the project folder to run the notebook (it's not committed to the repo).
 
 | Feature | Type | Notes |
 |---|---|---|
@@ -37,9 +37,7 @@ A classical ML notebook that predicts whether a US flight will be delayed from i
 | Random Forest | 0.670 | 0.720 | 0.575 | 7.0s |
 | HistGradientBoosting | 0.668 | 0.720 | 0.582 | 3.2s |
 
-- Best model: Random Forest (0.7204 ROC-AUC), essentially tied with HistGradientBoosting (0.7201). Its recall on delayed flights is 0.50 (precision 0.67), so it misses about half of the real delays. Lowering the 0.5 threshold would catch more, at the cost of more false alarms.
-- Every model plateaus around 0.72 AUC, so the limit is the data: there's no date, weather or upstream-delay information.
-- Caveat: the dataset has no date column, so the same scheduled flight appears on many days, and a random split puts copies in both train and test. Test scores are slightly optimistic.
+Best model: Random Forest (0.7204 ROC-AUC), essentially tied with HistGradientBoosting (0.7201). Its recall on delayed flights is 0.50 (precision 0.67), so it misses about half of the real delays.
 
 ## Tech stack
 
