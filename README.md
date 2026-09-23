@@ -2,7 +2,9 @@
 
 A classical ML notebook that predicts whether a US flight will be delayed from its airline, origin/destination airports, day of week, departure time and scheduled length.
 
-## [▶ Live Demo](TODO)
+## [▶ Live Demo](https://delay-classifier.streamlit.app/)
+
+![Flight Delay Classifier app showing a delay prediction](screenshot.png)
 
 ## Dataset
 
